@@ -1,0 +1,172 @@
+/*** sectioning elements ***/
+
+body {
+    background-color: #000000;
+    padding: 2%;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+header {
+    
+
+}
+
+div.container {
+    background-color: #FFFFFF;
+    
+    margin: 0 auto;
+}
+
+div.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    /* I wouldn't recommend applying any styles to this
+       section as the 'main' element is not supported
+       in all browsers yet. */
+}
+
+footer {
+
+}
+
+nav {
+    background-color: #000000;
+}
+
+section {
+
+}
+
+aside {
+
+}
+/***Nav Styles***/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    border-right: 2px solid #FF0000;
+    width: 25%;
+}
+
+nav li:last-child {
+    border: none;
+}
+
+nav a:link, nav a:visited {
+    display: block;
+    padding: 5px 10px 5px 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    background-color: #FF0000;
+}
+
+/**** base styles ***/
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+blockquote {
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+
+/*** image styles ***/
+
+img.margin  {
+    margin-right: inherit;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 15%;
+    
+}
+
+
+/*** link styles ***/
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+
+/*** form styles (coming soon) ***/

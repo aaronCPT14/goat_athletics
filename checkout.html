@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>G.O.A.T. Athletic Department: Checkout</title>
+<link rel="icon" href="img/goat3.png">
+
+<!-- Stylesheets -->
+<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/grid_6.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="loadCart()">
+
+<header>
+    
+<div class="container">
+    
+    <div class="row">
+        
+        <div class="two-thirds static-mobile">
+            <img src="img/goat3.png" alt="logo">
+            
+        </div>
+        
+        <div class="one-third">
+            <!-- begin cart link widget -->
+<div id="cart_links">
+    <a href="cart.html"><img class="cart_icon" src="img/cart_icon.png" alt="cart icon" /></a>
+    <span class="cart_link"><a id="cart_link" href="cart.html">Shopping Cart</a></span> <br />
+    <span class="item_count">Items (<span id="item_count">0</span>)</span>
+    
+</div>
+<!-- end widget -->
+            
+        </div>
+        
+    </div>
+    
+     <div class="row">
+        
+        <div class="one-third">
+            
+            <h1>Checkout</h1>
+            
+        </div>
+        
+        <div class="two-thirds static-mobile">
+           <nav>
+        <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shirts.html">Shirts</a></li>
+        <li><a href="shoes.html">Shoes</a></li>
+        <li><a href="teamsports.html">Teamsports</a></li>
+        </ul>
+    </nav>
+        </div>
+        
+    </div>
+    
+</div>
+
+</header>
+            
+<div class="container">
+    <div class="row">
+        <div class="full">
+            <div class="container">
+                <form action="action_page.php">
+                    <fieldset>
+                        <legend>Shipping Info</legend>
+                                Name:<br> <input type="text"  required><br>
+                                Address:<br> <input type="text" required><br>
+                                City:<br> <input type="text" required><br>
+                                State:<br> <input type="text" required><br>
+                                Zip Code:<br> <input type="text" pattern="(\d{5}([\-]\d{4})?)"required><br>
+                                Phone Number:<br> <input type="text" required><br>
+                                Email Address:<br> <input type="text" required><br>
+                    </fieldset>
+    
+    <fieldset>
+      <legend>Payment</legend>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-holder-name" required>Name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-number" required>Card Number</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="card-number" id="card-number" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="expiry-month" required>Expiration Date</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-xs-3">
+              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month" required>
+                <option>Month</option>
+                <option value="01">Jan (01)</option>
+                <option value="02">Feb (02)</option>
+                <option value="03">Mar (03)</option>
+                <option value="04">Apr (04)</option>
+                <option value="05">May (05)</option>
+                <option value="06">June (06)</option>
+                <option value="07">July (07)</option>
+                <option value="08">Aug (08)</option>
+                <option value="09">Sep (09)</option>
+                <option value="10">Oct (10)</option>
+                <option value="11">Nov (11)</option>
+                <option value="12">Dec (12)</option>
+              </select>
+            </div>
+            <div class="col-xs-3">
+              <select class="form-control" name="expiry-year">
+                <option value="16">2016</option>
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" required>Card CVN</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <a href="thanks.html"><button type="button" class="btn btn-success" required>Pay Now</button></a>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+        </div>
+    </div>
+</div>
+            
+        </div>
+        
+</div>
+
+<footer>
+    
+    <div class="container">
+<div class="row hide-mobile">
+            
+             <div class="full">
+                
+                
+               &copy;2016 G.O.A.T. Athletic Department
+                
+                  
+            </div>
+        </div>
+    
+</footer>
+
+<!-- javascript -->
+<script src="js/cart.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+
+</body>
+</html>
